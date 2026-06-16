@@ -17,7 +17,7 @@
                     <p>Welcome to the Weather App!</p>
                 </div><br>
                 <form id="weather-form">
-                    <input type="text" placeholder="Enter city name" required class="city-input"><br><br>
+                    <input class="textarea" type="text" placeholder="Enter city name" required class="city-input"><br><br>
                     <button type="submit">Get Weather</button>
                 </form><br>
                 <div class="weather-container">
@@ -41,6 +41,20 @@
                 <p>Temprature,</p>
                 <p>Date and Time,</p>
                 <p>Weather Condition</p>
+            </fieldset><br>
+            <fieldset class="feed-field">
+                <legend>Feedback</legend>
+                <h4>We Value Your Feedback!</h4>
+                <form class="feedback-form">
+                    <p>Your Name:</p>
+                    <textarea class="feed-area" placeholder="Enter your name" required></textarea><br>
+                    <p>Your e-Mail:</p>
+                    <textarea class="feed-area" placeholder="Enter your e-mail" required></textarea><br>
+                    <p>Your Feedback:</p>
+                    <textarea class="feed-area" placeholder="Enter your feedback here" required></textarea><br>
+                    <button type="submit">Submit</button>&nbsp;
+                    <button type="reset">Reset</button>
+                </form>
             </fieldset>
         </div>
     </div>
