@@ -15,6 +15,13 @@
     align-items: center;
 }
 
+h1:hover{
+    color: rgb(54, 198, 255);
+    animation: fadeInUp 1s ease-out 0.5s;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
 h4{
     padding-bottom: 6px;
 }
