@@ -1,64 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="box">
             <div class="header">
-                <div class="app-name">
+                <div class="header-name">
                     <h1>Weather App</h1>
-                </div>
-                <div class="welcome">
                     <p>Welcome to the Weather App!</p>
-                </div><br>
-                <form id="weather-form">
-                    <input class="textarea" type="text" placeholder="Enter city name" required class="city-input"><br><br>
+                </div>
+                <form id="city-input">
+                    <input class="textarea" type="text" placeholder="Enter city name" required><br>
                     <button type="submit">Get Weather</button>
-                </form><br>
+                </form>
                 <div class="weather-container">
-                    <div class="temp">
-                        <p>30°C</p>
-                    </div>
-                    
                     <div class="time-location">
+                        <p class="temp">30°C</p>
                         <p>Delhi</p>
                         <p>12:58 PM</p>
                         <p>Monday 15-06-2026</p>
+                        <p class="weather-info">Condition: Sunny</p>
                     </div>
-                    <div class="weather-info">
-                        <p>Condition: Sunny</p>
-                    </div>
-                </div><br>
-            </div><hr><br>
-            <fieldset class="field">
+                </div>
+            </div><br>
+            <hr><br>
+            <fieldset class="instruct">
                 <legend>Instructions</legend>
                 <h4>You Can Check These!</h4>
                 <p>Temprature,</p>
                 <p>Date and Time,</p>
                 <p>Weather Condition</p>
             </fieldset><br>
-            <fieldset class="feed-field">
+            <fieldset class="feed">
                 <legend>Feedback</legend>
                 <h4>We Value Your Feedback!</h4>
-                <form class="feedback-form">
-                    <p>Your Name:</p>
-                    <textarea class="feed-area" placeholder="Enter your name" required></textarea><br>
-                    <p>Your e-Mail:</p>
-                    <textarea class="feed-area" placeholder="Enter your e-mail" required></textarea><br>
-                    <p>Your Feedback:</p>
-                    <textarea class="feed-area" placeholder="Enter your feedback here" required></textarea><br>
-                    <button type="submit">Submit</button>&nbsp;
-                    <button type="reset">Reset</button>
-                </form>
+                <p>Your Name:</p>
+                <textarea placeholder="Enter your name" required></textarea><br>
+                <p>Your e-Mail:</p>
+                <textarea placeholder="Enter your e-mail" required></textarea><br>
+                <p>Your Feedback:</p>
+                <textarea placeholder="Enter your feedback here" required></textarea><br>
+                <button type="submit">Submit</button>&nbsp;
+                <button type="reset">Reset</button>
             </fieldset>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
