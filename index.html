@@ -13,20 +13,21 @@
         <div class="box">
             <div class="header">
                 <div class="header-name">
-                    <h1>Weather App</h1>
+                    <h1 href="#">Weather App</h1>
                     <p>Welcome to the Weather App!</p>
                 </div>
                 <form id="city-input">
-                    <input class="textarea" type="text" placeholder="Enter city name" required><br>
+                    <input id="location" class="textarea" type="text" placeholder="Enter city name" required><br>
                     <button type="submit">Get Weather</button>
                 </form>
                 <div class="weather-container">
                     <div class="time-location">
-                        <p class="temp">30°C</p>
-                        <p>Delhi</p>
-                        <p>12:58 PM</p>
-                        <p>Monday 15-06-2026</p>
-                        <p class="weather-info">Condition: Sunny</p>
+                        <p class="temp" id="temp">--°C</p>
+                        <p id="city">City</p>
+                        <p id="time">--:--</p>
+                        <p id="date">--</p>
+                        <p class="weather-info" id="condition">Condition: --</p>
+                        <p id="result"></p>
                     </div>
                 </div>
             </div><br>
@@ -37,18 +38,22 @@
                 <p>Temprature,</p>
                 <p>Date and Time,</p>
                 <p>Weather Condition</p>
+                <p>Wind Speed & Clouds</p>
             </fieldset><br>
             <fieldset class="feed">
                 <legend>Feedback</legend>
                 <h4>We Value Your Feedback!</h4>
-                <p>Your Name:</p>
-                <textarea placeholder="Enter your name" required></textarea><br>
-                <p>Your e-Mail:</p>
-                <textarea placeholder="Enter your e-mail" required></textarea><br>
+                <label for="username" id="label-name">Name: </label>
+                <input type="text" id="username" class="textarr" required placeholder="Enter your name"><br><br>
+
+                <label for="email" id="label-email">Email: </label>
+                <input type="email" id="email" class="textarr" required placeholder="Enter your email"><br>
                 <p>Your Feedback:</p>
+
                 <textarea placeholder="Enter your feedback here" required></textarea><br>
-                <button type="submit">Submit</button>&nbsp;
-                <button type="reset">Reset</button>
+
+                <button type="submit" onclick="getName()">Submit</button>&nbsp;
+                <button type="reset" onclick="resetForm()">Reset</button>
             </fieldset>
         </div>
     </div>

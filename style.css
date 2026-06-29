@@ -9,7 +9,7 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-size: cover;
     background-color: rgb(39, 78, 129);
-    background-image: radial-gradient(#999 1px, transparent 1px);
+    background-image: url('https://img.freepik.com/free-vector/flat-design-monsoon-season-clouds-illustration_23-2149424294.jpg?t=st=1737555497~exp=1737559097~hmac=52943574c420b3f3757721a98919cbd54447353b3c54dec112af7fb8e219abf9&w=996');
     color: white;
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@
     justify-content: center;
     align-items: center;
     color: black;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.75);
     border-radius: 9px;
 }
 
@@ -74,13 +74,14 @@ h4{
     padding-bottom: 5px;
 }
 
-.instruct, .feed, textarea{
+.instruct, .feed{
     margin: 0;
     padding: 10px;
 }
 
 p{
     margin: 5px;
+    /* margin-bottom: 20px; */
 }
 
 .temp{
@@ -89,4 +90,16 @@ p{
 
 .time-location, .weather-info{
     font-size: 1.2rem;
+}
+
+textarea, .textarr{
+    width: 70%;
+    margin-left: 6px;
+    padding: 10px;
+}
+
+#label-name, #label-email{
+    margin: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
 }
