@@ -1,105 +1,190 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container{
+/* main container */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('https://img.freepik.com/free-vector/flat-design-monsoon-season-clouds-illustration_23-2149424294.jpg?t=st=1737555497~exp=1737559097~hmac=52943574c420b3f3757721a98919cbd54447353b3c54dec112af7fb8e219abf9&w=996');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* content box  */
+.box {
+  width: 90%;
+  max-width: 450px;
+  height: auto;
+  min-height: 100vh;
+  padding: 30px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 9px;
+}
+
+#city-input {
+  margin: 10px 0;
+}
+
+.textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 0.9rem 1rem;
+  border-radius: 5px;
+  background: transparent;
+  border-bottom: 3px solid rgb(5, 39, 83);
+  border-right: 1px solid rgb(5, 39, 83);
+  border-left: 1px solid rgb(5, 39, 83);
+  border-top: 1px solid rgb(5, 39, 83);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  font-size: medium;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgb(5, 39, 83);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feed button{
+    margin: 7px 0;
+}
+
+button:hover {
+  background-color: black;
+  animation: ease-in-out;
+  transition-duration: 0.5s;
+  transform: translateY(-3px);
+}
+
+h1:hover {
+  color: rgb(5, 39, 83);
+  animation: ease-in-out;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+h4 {
+  padding-bottom: 5px;
+}
+
+.instruct,
+.feed {
+  margin: 0;
+  padding: 10px;
+}
+
+p {
+  margin: 5px;
+  /* margin-bottom: 20px; */
+}
+
+.temp {
+  font-size: 2rem;
+}
+
+.time-location,
+.weather-info {
+  font-size: 1.2rem;
+}
+
+textarea,
+.textarr {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-left: 0;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.feed label{
+  margin: 5px;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    align-items: flex-start;
+  }
+  .box {
     width: 100%;
-    height: 100%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-size: cover;
-    background-color: rgb(39, 78, 129);
-    background-image: url('https://img.freepik.com/free-vector/flat-design-monsoon-season-clouds-illustration_23-2149424294.jpg?t=st=1737555497~exp=1737559097~hmac=52943574c420b3f3757721a98919cbd54447353b3c54dec112af7fb8e219abf9&w=996');
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 420px;
+    min-height: auto;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .temp {
+    font-size: 1.8rem;
+  }
+
+  .time-location,
+  .weather-info {
+    font-size: 1rem;
+  }
+
+  .textarea,
+  .textarea,
+  .textarr {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+  }
 }
 
-.box{
-    width: 30%;
-    height: 100%;
-    padding: 30px;
-    margin-bottom: 40px;
-    margin-top: 30px;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.75);
-    border-radius: 9px;
-}
+@media (max-width: 480px) {
+  .box {
+    padding: 15px;
+    border-radius: 8px;
+  }
 
-#city-input{
-    margin: 10px 0;
-}
+  h1 {
+    font-size: 1.5rem;
+  }
+  .temp {
+    font-size: 1.6rem;
+  }
 
-.textarea{
-    width: 70%;
-    border-radius: 5px;
-    margin-top: 10px;
-    padding: 0.9rem 1rem;
-    background: transparent;
-    border-bottom: 3px solid rgb(5, 39, 83);
-    border-right: 1px solid rgb(5, 39, 83);
-    border-left: 1px solid rgb(5, 39, 83);
-    border-top: 1px solid rgb(5, 39, 83);
-}
+  .time-location,
+  .weather-info {
+    font-size: 0.95rem;
+  }
 
-button{
-    padding: 10px 25px;
-    margin: 15px 0;
-    font-size: medium;
-    color: rgba(255, 255, 255, 0.7);
-    background-color: rgb(5, 39, 83);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover{
-    background-color: black;
-    animation: ease-in-out;
-    transition-duration: 0.5s;
-    transform: translateY(-3px);
-}
-
-h1:hover{
-    color: rgb(5, 39, 83);
-    animation: ease-in-out;
-    transition-duration: 0.5s;
-    cursor: pointer;
-}
-
-h4{
-    padding-bottom: 5px;
-}
-
-.instruct, .feed{
-    margin: 0;
-    padding: 10px;
-}
-
-p{
-    margin: 5px;
-    /* margin-bottom: 20px; */
-}
-
-.temp{
-    font-size: 2rem;
-}
-
-.time-location, .weather-info{
-    font-size: 1.2rem;
-}
-
-textarea, .textarr{
-    width: 70%;
-    margin-left: 6px;
-    padding: 10px;
-}
-
-#label-name, #label-email{
-    margin: 5px;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
+  button {
+    font-size: 0.9rem;
+  }
 }
