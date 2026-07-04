@@ -6,19 +6,23 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="container">
         <div class="box">
             <div class="header">
+                <!-- Header Section -->
                 <div class="header-name">
                     <h1 href="#">Weather App</h1>
                     <p>Welcome to the Weather App!</p>
                 </div>
+
+                <!-- City Input Section -->
                 <form id="city-input">
                     <input id="location" class="textarea" type="text" placeholder="Enter city name" required><br>
                     <button type="submit">Get Weather</button>
                 </form>
+
+                <!-- Weather Result Section -->
                 <div class="weather-container">
                     <div class="time-location">
                         <p class="temp" id="temp">--°C</p>
@@ -29,8 +33,11 @@
                         <p id="result"></p>
                     </div>
                 </div>
+
             </div><br>
             <hr><br>
+
+            <!-- Instructions Section -->
             <fieldset class="instruct">
                 <legend>Instructions</legend>
                 <h4>You Can Check These!</h4>
@@ -39,21 +46,25 @@
                 <p>Weather Condition</p>
                 <p>Wind Speed & Clouds</p>
             </fieldset><br>
+
+            <!-- Feedback Section -->
             <fieldset class="feed">
                 <legend>Feedback</legend>
                 <h4>We Value Your Feedback!</h4>
+
                 <label for="username" id="label-name">Name: </label>
-                <input type="text" id="username" class="textarr" required placeholder="Enter your name"><br><br>
+                <input type="text" id="username" class="textarr" required placeholder="Enter your name">
 
                 <label for="email" id="label-email">Email: </label>
-                <input type="email" id="email" class="textarr" required placeholder="Enter your email"><br>
-                <p>Your Feedback:</p>
+                <input type="email" id="email" class="textarr" required placeholder="Enter your email">
 
+                <p>Your Feedback:</p>
                 <textarea placeholder="Enter your feedback here" required></textarea><br>
 
-                <button type="submit" onclick="getName()">Submit</button>&nbsp;
+                <button type="submit" onclick="getName()">Submit</button>
                 <button type="reset" onclick="resetForm()">Reset</button>
             </fieldset>
+
         </div>
     </div>
 
