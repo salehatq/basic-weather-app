@@ -1,1 +1,1 @@
-practice repo for an application form using basic html, css and javascript.
+an application for real-time weather information of any city around the globe.
