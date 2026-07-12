@@ -1,1 +1,1 @@
-an application for real-time weather information of any city around the globe.
+A weather application for real-time weather information like temprature, condition, air quality, wind speed, date and time etc by just putting the city name from all over the world. It has weather API integrated in it, beautiful minimalist UI along with some instructions, also a feedback form for reviews and suggestions.
