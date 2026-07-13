@@ -109,6 +109,15 @@ p {
   font-size: 1.2rem;
 }
 
+footer {
+  text-align: center;
+  padding: 2rem;
+  opacity: 0.7;
+  position:relative;
+  bottom: 0;
+  width: 100%;
+}
+
 textarea,
 .textarr {
   width: 100%;
@@ -123,7 +132,7 @@ textarea,
   margin: 5px;
 }
 
-/* media queries */
+/* media queries for resposiveness */
 
 @media (max-width: 768px) {
   .container {

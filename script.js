@@ -44,5 +44,5 @@ function getName() {
 
 function resetForm() {
     let name = document.getElementById("username").value;
-    alert(`${name}, your feedback has been reset!`)
+    alert(`Your feedback has been reset!`)
 }
