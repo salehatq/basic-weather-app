@@ -1,7 +1,10 @@
+// City Input
 document.getElementById("city-input").addEventListener("submit", function (e) {
     e.preventDefault();
     getWeather();
 });
+
+// Weather Information
 
 async function getWeather() {
 
@@ -14,14 +17,11 @@ async function getWeather() {
             "Please enter a location.";
         return;
     }
-
     try {
         const response = await fetch(url);
-
         if (!response.ok) {
             throw new Error("Location not found");
         }
-
         const data = await response.json();
 
         document.getElementById("temp").textContent = data.current.temp_c + "°C";
@@ -31,18 +31,29 @@ async function getWeather() {
         document.getElementById("date").textContent = data.location.localtime.split(" ")[0];
         document.getElementById("result").textContent = `Wind Speed: ${data.current.wind_mph} mph | Cloud: ${data.current.cloud}%`;
     }
-
     catch (error) {
         document.getElementById("result").textContent = error.message;
     }
 }
 
-function getName() {
-    let name = document.getElementById("username").value;
-    alert(`Hello, ${name} \nYour feedback is submitted!`);
+// Feedback Form Functionalities
+
+function getName(event) {
+    event.preventDefault();
+    const name = document.getElementById("username").value.trim();
+    if (name === "") {
+        alert("Please enter your name!");
+        return false;
+    }
+    alert(`Hello, ${name}\nYour feedback has been submitted successfully!`);
+
+    document.getElementById("feed").reset();
+    return false;
 }
 
 function resetForm() {
-    let name = document.getElementById("username").value;
-    alert(`Your feedback has been reset!`)
+    if (confirm("Are you sure you want to reset?")) {
+        document.getElementById("feed").reset();
+        alert("Form reset successfully!");
+    }
 }
